@@ -1,0 +1,37 @@
+body{
+    transition: .4s;
+}
+
+.trans {
+    width: 85px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: black;
+    position: relative;
+}
+
+.blink {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    box-shadow: inset 3px 3px 3px rgb(255, 255, 255), inset -6px -6px 2px rgb(195, 195, 195);
+}
+
+.dark {
+    transition: 0.45s;
+    background-color:rgb(60, 55, 57);
+}
+
+.crescent {   
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  position: absolute;
+  top: 7px;
+  left: 50px;
+}
