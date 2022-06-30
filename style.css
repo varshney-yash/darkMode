@@ -1,5 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body{
-    transition: .4s;
+    transition: .45s;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    background-color: rgb(228, 222, 222);
+    color: rgb(51, 50, 50);
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    margin: 50px 0 10px 0;
+}
+
+p {
+    margin: 0px;
+    font-size: 20;
+}
+
+a {
+    color: blueviolet;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.dark a {
+    color: cadetblue;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+}
+
+body .blink {
+    transition: 0.45s;
 }
 
 .trans {
@@ -34,4 +80,81 @@ body{
   position: absolute;
   top: 7px;
   left: 50px;
+}
+
+.dark .blink {
+    transform: translateX(45px);
+    transition: .45s;
+}
+
+.dark >* {
+    color: aliceblue;
+}
+
+.head {
+    height: 80vh;
+}
+
+.head-text {
+    padding: 30px;
+}
+
+.project {
+    width: 98%;
+    margin: 2px;
+    height: 350px;
+    background-color: white;
+}
+
+.dark .project {
+    background-color:#28282B;
+}
+
+#p1 {
+    /* background-image: url(images/musicPlayer.png); */
+    background-size: cover;
+}
+
+#p2 {
+    /* background-image: url(images/jokeTeller.png); */
+    background-size: cover;
+}
+
+#p3 {
+    /* background-image: url(images/twitterClone.png); */
+    background-size: cover;
+}
+
+#p4 {
+    /* background-image: url(images/cryptoDashboard.png); */
+    background-size: cover;
+}
+
+.sub-head {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 100px 40px;
+    background-color: wheat;
+    color: #28282B;
+}
+
+.dark footer {
+    background-color: black;
+}
+
+
+@media only screen and (min-width: 970px) {
+    .head-text{
+        width: 50%;
+    }
+    .project{
+        width: 47%;
+        margin: 1%;
+        height: 600px;
+    }
 }
